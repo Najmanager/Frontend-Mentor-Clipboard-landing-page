@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+/* typography */
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    color: hsl(210, 10%, 33%)
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+p {
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+/* buttons */
+
+.button {
+    cursor: pointer;
+    font-size: 1.125rem;
+    border: none;
+    color: white;
+    border-radius: 100vmax;
+    padding: 0.8em 2em;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button-green {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0 1em 1.5em -1em hsl(171, 66%, 44%);
+}
+
+.button-blue {
+    background-color: hsl(233, 100%, 69%);
+}
+
+.bg-img-desktop {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.bg-logo {
+    margin-top: 25vh;
+    margin-bottom: 5vh;
+}
+
+.bg-img-mobile {
+   display: none;
+}
+
+.footer {
+    background-color: rgb(245,246,247);
+}
+/* .text p {
+    margin: 0 au
+} */
+
+@media(max-width:50em) {
+    .bg-img-desktop {
+        display: none;
+    }
+
+    .bg-img-mobile {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        display: block;
+    }
+    
+    .buttons {
+        margin-top: 5vh;
+        margin-bottom: 20vh;
+    }
+
+    .button {
+        margin: 2vh auto;
+        padding: 0.8em 2em;
+        width: 80vw;
+    }
+  
+    .bg-logo {
+        margin-top: 25vh;
+        margin-bottom: 5vh;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+
+    .computer {
+        margin: 5vh auto;
+    }
+    .devices,
+    .computer {
+        width: 100%;
+    }
+    .container {
+        margin: 0 10vw;
+    }
+    .center-on-mobile {
+        text-align: center;
+    }
+    .access {
+        margin-top: 20vh;
+    }
+    .devices {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+    .sc-grid {
+        margin: 8vh auto;
+    }
+    .logos {
+        margin-top: 15vh;
+    }
+    .logos > img {
+        display: block;
+        margin: 10vh auto;
+    }
+    .clipboard {
+        margin-top: 20vh;
+    }
+    .footer-th {
+        text-align: center;
+    }
+    .footer p {
+        color: rgb(114, 114, 119);
+        margin-top: 1.5em;
+    }
+    .footer-logo {
+        margin: 10vh auto 5vh auto;
+        width: 15%
+    }
+    .socials {
+        padding: 3em ;
+    }
+    .socials > img {
+        margin: auto 1em;
+    }
+}
+@media(min-width: 50em) {
+    .keep {
+        margin-top: 15vh;
+    }
+    .keep-p {
+        margin: auto 35vh;
+    }
+    .keep-grid {
+        margin: 10vh 10vh 15vh auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8vw;
+    }
+    .keep-grid h3 {
+        margin-top: 4.5vh;
+    }
+    
+    .computer{
+        margin-left: -2em;
+    }
+    
+    .devices {
+        margin-top: 10vh;
+    }
+    
+    .grid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 8vh 15vh 15vh 15vh;
+        gap: 1em;
+    }
+    .grid p {
+        margin: 0;
+    }
+    
+    .logos {
+       text-align: center;
+    }
+    
+    .logos > img {
+        margin: auto 2em;
+    }
+    
+    .clipboard {
+        margin: 15vh auto;
+    }
+    
+    .clipboard p {
+        margin: auto 15em;
+    }
+    
+    .buttons {
+        margin-top: 5vh;
+        margin-bottom: 20vh;
+    }
+    
+    .footer-th {
+        display: flex;
+        padding: 1.5em ;
+    }
+    
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3.5em;
+    }
+    
+    .footer-logo {
+        width: 5%;
+        margin: auto 10vw;
+    }
+    
+    .footer p:hover {
+        color: hsl(171, 66%, 44%);
+        cursor: pointer;
+    }
+    
+    .social-icon:hover {
+        fill:hsl(171, 66%, 44%);
+        cursor: pointer;
+    }
+    
+    .socials {
+       margin: auto 2em auto 15vw;
+    }
+    
+    .socials > img {
+        margin: auto 0.5em;
+    }
+    
+}
